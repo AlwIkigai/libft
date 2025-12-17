@@ -20,135 +20,113 @@ As my **first major programming project**, `libft` taught me how to:
 ---
 
 ## Build
-
 ```bash
 make
+```
 
 This generates:
+```txt
 libft.a
+```
 
-Bonus (linked list utilities):
+### Bonus (linked list utilities):
+```bash
 make bonus
+```
 
-Clean / rebuild:
+### Clean / rebuild:
+```bash
 make clean
 make fclean
 make re
+```
 
-Included Functions
-Character checks & case conversion
+## Included Functions
 
-ft_isalpha
+### Character checks & case conversion
+- **ft_isalpha** – checks whether a character is alphabetic
+- **ft_isdigit** – checks whether a character is a digit
+- **ft_isalnum** – checks whether a character is alphanumeric
+- **ft_isascii** – checks whether a character is a valid ASCII value
+- **ft_isprint** – checks whether a character is printable
+- **ft_toupper** – converts a lowercase character to uppercase
+- **ft_tolower** – converts an uppercase character to lowercase
 
-ft_isdigit
 
-ft_isalnum
+### String utilities
 
-ft_isascii
+- **ft_strlen** – returns the length of a string
+- **ft_strlcpy** – copies a string with size limitation
+- **ft_strlcat** – concatenates strings with size limitation
+- **ft_strchr** – locates the first occurrence of a character in a string
+- **ft_strrchr** – locates the last occurrence of a character in a string
+- **ft_strncmp** – compares two strings up to a given length
+- **ft_strnstr** – locates a substring within a string up to a given length
+- **ft_strdup** – duplicates a string into newly allocated memory
 
-ft_isprint
 
-ft_toupper
+### Memory utilities
 
-ft_tolower
+- **ft_bzero** – sets a block of memory to zero
+- **ft_memset** – fills a block of memory with a specified byte value
+- **ft_memcpy** – copies memory from source to destination
+- **ft_memmove** – copies memory safely, handling overlapping regions
+- **ft_memchr** – locates a byte in a block of memory
+- **ft_memcmp** – compares two blocks of memory
+- **ft_calloc** – allocates and zero-initializes memory
 
-String utilities
 
-ft_strlen
+### Conversions
 
-ft_strlcpy
+- **ft_atoi** – converts a string to an integer
+- **ft_itoa** – converts an integer to a string
 
-ft_strlcat
 
-ft_strchr
+### String building & transformation
 
-ft_strrchr
+- **ft_substr** – extracts a substring from a string
+- **ft_strjoin** – concatenates two strings into a new string
+- **ft_strtrim** – trims specified characters from the start and end of a string
+- **ft_split** – splits a string into an array using a delimiter
+- **ft_strmapi** – applies a function to each character of a string and returns a new string
+- **ft_striteri** – applies a function to each character of a string in place
 
-ft_strncmp
 
-ft_strnstr
+### File descriptor output helpers
 
-ft_strdup
+- **ft_putchar_fd** – writes a character to a file descriptor
+- **ft_putstr_fd** – writes a string to a file descriptor
+- **ft_putendl_fd** – writes a string followed by a newline to a file descriptor
+- **ft_putnbr_fd** – writes an integer to a file descriptor
 
-Memory utilities
-
-ft_bzero
-
-ft_memset
-
-ft_memcpy
-
-ft_memmove
-
-ft_memchr
-
-ft_memcmp
-
-ft_calloc
-
-Conversions
-
-ft_atoi
-
-ft_itoa
-
-String building & transformation
-
-ft_substr
-
-ft_strjoin
-
-ft_strtrim
-
-ft_split
-
-ft_strmapi
-
-ft_striteri
-
-File descriptor output helpers
-
-ft_putchar_fd
-
-ft_putstr_fd
-
-ft_putendl_fd
-
-ft_putnbr_fd
-
-Bonus: Linked List Utilities
+### Bonus: Linked List Utilities
 
 Based on the following structure:
+```c
 typedef struct s_list
 {
     void            *content;
     struct s_list   *next;
 }   t_list;
-Functions included:
+```
+###  Functions included:
 
-ft_lstnew
+- **ft_lstnew** – creates a new list node
+- **ft_lstadd_front** – adds a node at the beginning of a list
+- **ft_lstsize** – returns the number of nodes in a list
+- **ft_lstlast** – returns the last node of a list
+- **ft_lstadd_back** – adds a node at the end of a list
+- **ft_lstdelone** – deletes a single list node
+- **ft_lstclear** – deletes and frees an entire list
+- **ft_lstiter** – applies a function to each node’s content
+- **ft_lstmap** – creates a new list by applying a function to each node
 
-ft_lstadd_front
 
-ft_lstsize
-
-ft_lstlast
-
-ft_lstadd_back
-
-ft_lstdelone
-
-ft_lstclear
-
-ft_lstiter
-
-ft_lstmap
-
-Notes
+##  Notes
 
 This repository focuses on fundamentals and correctness and was used as a base library for later C projects.
 
-Author
+##  Author
 
 Syed Ahmad
 GitHub: https://github.com/AlwIkigai
